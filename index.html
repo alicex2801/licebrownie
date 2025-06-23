@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lice Brownies</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <script defer>
+    function toggleMenu() {
+      const menu = document.querySelector(".nav-responsive");
+      const icon = document.querySelector(".menu-hamburguer");
+      menu.classList.toggle("active");
+      icon.classList.toggle("change");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      Lice <span>Brownies</span>
+    </div>
+    <nav class="nav">
+      <a href="#home">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#sabores">Sabores</a>
+      <a href="#encomendas">Encomendas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="menu-hamburguer" onclick="toggleMenu()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <nav class="nav-responsive">
+      <a href="#home" onclick="toggleMenu()">Início</a>
+      <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+      <a href="#sabores" onclick="toggleMenu()">Sabores</a>
+      <a href="#encomendas" onclick="toggleMenu()">Encomendas</a>
+      <a href="#contato" onclick="toggleMenu()">Contato</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Brownies feitos com <span>amor</span></h1>
+      <h3>Sabores que conquistam</h3>
+      <p>
+        Delicie-se com os melhores brownies de Ribeirão Preto! Feitos
+        artesanalmente com ingredientes selecionados.
+      </p>
+      <a href="#encomendas" class="btn">Fazer pedido</a>
+    </div>
+    <div class="home-img">
+      <img src="brownie-img.png" alt="Brownie delicioso" />
+    </div>
+  </section>
+
+  <section class="about" id="sobre">
+    <div class="about-img">
+      <img src="alice.png" alt="Foto da Alice" />
+    </div>
+    <div class="about-content">
+      <h1>Quem faz?</h1>
+      <h3>Oi! Eu sou a Alice!</h3>
+      <p>
+        Estudante e empreendedora por paixão. Criei a Lice Brownies pra
+        espalhar amor em forma de doce. Tudo é feito com carinho e cuidado,
+        desde a massa até a entrega!
+      </p>
+    </div>
+  </section>
+
+  <section class="services" id="sabores">
+    <h2>Sabores</h2>
+    <div class="services-container">
+      <div class="services-box">
+        <h3>Tradicional</h3>
+        <p>Brownie clássico feito com cacau 50%, simples e perfeito. R$ 5,00</p>
+      </div>
+      <div class="services-box">
+        <h3>Recheado</h3>
+        <p>Com brigadeiro, Ninho ou oreo. R$ 8,00</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="encomendas">
+    <h2>Faça sua encomenda</h2>
+    <form action="https://wa.me/5516981094469" target="_blank">
+      <div class="input-box">
+        <input type="text" placeholder="Seu nome" required />
+        <input
+          type="text"
+          placeholder="Seu WhatsApp ou Instagram"
+          required
+        />
+      </div>
+      <textarea
+        rows="4"
+        placeholder="Digite aqui sua encomenda: sabores e quantidades"
+        required
+      ></textarea>
+      <button type="submit" class="btn">Enviar pedido</button>
+    </form>
+  </section>
+
+  <section class="portfolio" id="contato">
+    <h2>Nos siga!</h2>
+    <div class="social-media">
+      <a href="https://instagram.com/licebrownie.rp" target="_blank"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lice Brownies — Feito com 💕 por Alice Silva</p>
+  </footer>
+</body>
+</html>
